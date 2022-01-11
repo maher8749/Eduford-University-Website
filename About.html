@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, intitle-to-fit scale=1.0">
+    <title>Eduford University Website</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  </head>
+  <body>
+<!-- Header,Responsive Navigation Bar,Cover Image---->
+<section class="sub-header">
+   <nav>
+     <a href="Index.html"><img src="Images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+        <i class="far fa-times-circle" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="Index.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Courses.html">COURSES</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
+            <li><a href="Contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-landmark" onclick="showMenu()"></i>
+        </nav>
+       <h1>About US</h1>
+</section>
+  <!--- about-us-content ----->
+<section class="about-us">
+  <div class="row">
+    <div class="about-us-column">
+      <h2>We Are The World Best University!</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <a href="#" class="visit-btn red-btn">EXPLORE-US</a>
+    </div>
+    <div class="about-us-column">
+      <img src="Images/about.jpg" alt="">
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!--- Footer --->
+<section class="footer">
+  <h4>About Us</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br>sed do eiusmod tempor .</p>
+  <div class="icons">
+     <i class="fab fa-facebook"></i>
+     <i class="fab fa-twitter"></i>
+     <i class="fab fa-instagram"></i>
+     <i class="fab fa-linkedin"></i>
+  </div>
+  <p>Made with <i class="fas fa-heartbeat"></i> by Maher </p>
+</section>
+
+<!---javascript toggle menu-->
+<script>
+
+ var navLinks = document.getElementById("navLinks");
+ function showMenu(){
+   navLinks.style.right="0";
+ }
+ function hideMenu(){
+   navLinks.style.right="-200px";
+ }
+</script>
+
+
+  </body>
+</html>
